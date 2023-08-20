@@ -1,7 +1,7 @@
-[# tvi-website
-# tvi-website
-# tvi-website
-](https://tvi.dyndns.biz:2442/api/hms/company_info
+
+url
+
+https://tvi.dyndns.biz:2442/api/hms/company_info
 
 
 HMS Custom API Documentation
