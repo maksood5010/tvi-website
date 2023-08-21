@@ -319,37 +319,37 @@ $(function () {
 });
 (function () {
     "use strict";
-  
+
     // define variables
     var items = document.querySelectorAll(".timeline li");
-  
+
     // check if an element is in viewport
     // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
     function isElementInViewport(el) {
-      var rect = el.getBoundingClientRect();
-      return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <=
-          (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-      );
+        var rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
     }
-  
+
     function callbackFunc() {
-      for (var i = 0; i < items.length; i++) {
-        if (isElementInViewport(items[i])) {
-          items[i].classList.add("in-view");
+        for (var i = 0; i < items.length; i++) {
+            if (isElementInViewport(items[i])) {
+                items[i].classList.add("in-view");
+            }
         }
-      }
     }
-  
+
     // listen for events
     window.addEventListener("load", callbackFunc);
     window.addEventListener("resize", callbackFunc);
     window.addEventListener("scroll", callbackFunc);
-  })();
-  const data = [
+})();
+const data = [
     { dateLabel: '1985', title: 'Scand Care' },
     { dateLabel: '1990', title: 'Talat' },
     { dateLabel: '2005', title: 'Majestic' },
@@ -370,22 +370,10 @@ $(function () {
     { dateLabel: '2022', title: 'Cosmo RAK' },
     { dateLabel: '2022', title: 'Cosmo Mirdif' },
     { dateLabel: '2023', title: 'American Academy of Cosmetic Surgery Hospital' },
-  ];
-  
-  new Vue({
-    el: '#app', 
-    data: {
-      steps: data,
-    },
-    mounted() {
-      var swiper = new Swiper('.swiper-container', {
-        //pagination: '.swiper-pagination',
-        slidesPerView: 3,
-        paginationClickable: true,
-        grabCursor: true,
-        paginationClickable: true,
-        nextButton: '.next-slide',
-        prevButton: '.prev-slide',
-      });    
-    }
-  })
+];
+$('#floating-icon').click(function () {
+    $('#floating-ligar').toggle();
+    $('#floating-whatsapp').toggle();
+    $('#floating-emergencia').toggle();
+});
+
