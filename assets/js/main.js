@@ -317,3 +317,75 @@ $(function () {
     // [Zoom Effect on Hovering] Find it in shop-single-product.html
     $(".zoomin").imagezoomsl();
 });
+(function () {
+    "use strict";
+  
+    // define variables
+    var items = document.querySelectorAll(".timeline li");
+  
+    // check if an element is in viewport
+    // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+    function isElementInViewport(el) {
+      var rect = el.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <=
+          (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+  
+    function callbackFunc() {
+      for (var i = 0; i < items.length; i++) {
+        if (isElementInViewport(items[i])) {
+          items[i].classList.add("in-view");
+        }
+      }
+    }
+  
+    // listen for events
+    window.addEventListener("load", callbackFunc);
+    window.addEventListener("resize", callbackFunc);
+    window.addEventListener("scroll", callbackFunc);
+  })();
+  const data = [
+    { dateLabel: '1985', title: 'Scand Care' },
+    { dateLabel: '1990', title: 'Talat' },
+    { dateLabel: '2005', title: 'Majestic' },
+    { dateLabel: '2014', title: 'Cosmo Sharjah' },
+    { dateLabel: '2015', title: 'Lauretta' },
+    { dateLabel: '2016', title: 'NewLook AD' },
+    { dateLabel: '2017', title: 'NewLook Khabisi' },
+    { dateLabel: '2017', title: 'NewLook Extra' },
+    { dateLabel: '2018', title: 'NewLook Yahar' },
+    { dateLabel: '2018', title: 'Nazek' },
+    { dateLabel: '2018', title: 'Wldy' },
+    { dateLabel: '2018', title: 'Cosmo Jumeirah' },
+    { dateLabel: '2019', title: 'Levantine' },
+    { dateLabel: '2020', title: 'Korean' },
+    { dateLabel: '2020', title: 'True Life' },
+    { dateLabel: '2022', title: 'Cosmo Marina' },
+    { dateLabel: '2022', title: 'Cosmo Ajman' },
+    { dateLabel: '2022', title: 'Cosmo RAK' },
+    { dateLabel: '2022', title: 'Cosmo Mirdif' },
+    { dateLabel: '2023', title: 'American Academy of Cosmetic Surgery Hospital' },
+  ];
+  
+  new Vue({
+    el: '#app', 
+    data: {
+      steps: data,
+    },
+    mounted() {
+      var swiper = new Swiper('.swiper-container', {
+        //pagination: '.swiper-pagination',
+        slidesPerView: 3,
+        paginationClickable: true,
+        grabCursor: true,
+        paginationClickable: true,
+        nextButton: '.next-slide',
+        prevButton: '.prev-slide',
+      });    
+    }
+  })
