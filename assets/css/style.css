@@ -1101,6 +1101,21 @@ textarea {
   background-color: #f8f8f8;
   /* background-color: rgba(33, 205, 192, 0.85); */
 }
+.slider-bg {
+  background-color: #5298B1;
+  
+  /* background-color: rgba(33, 205, 192, 0.85); */
+}
+
+.slider-bg .desc{
+  color: white;
+
+}
+.slider-bg .title{
+  
+  color: white;
+  /* background-color: rgba(33, 205, 192, 0.85); */
+}
 
 .bg-overlay-primary-gradient:before {
   opacity: 0.95;
