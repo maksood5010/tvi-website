@@ -4208,7 +4208,7 @@ input[type=radio] {
 .footer .footer-primary {
   padding-top: 85px;
   padding-bottom: 60px;
-  background-color: #1d2a4d;
+  background-color: #5298B1;
 }
 
 .footer .footer-secondary {
@@ -4277,7 +4277,7 @@ input[type=radio] {
 .footer .footer-widget-nav li a {
   display: block;
   position: relative;
-  color: #848e9f;
+  color: #fff;
   font-size: 14px;
   margin-bottom: 11px;
 }
@@ -4348,6 +4348,10 @@ input[type=radio] {
   right: 30px;
   opacity: 1;
 }
+.footer-widget-about img{
+  background-color: white;
+  background: white;
+}
 
 @media (min-width: 1200px) {
 
@@ -4356,6 +4360,10 @@ input[type=radio] {
     margin-top: 40px;
   }
 }
+.footer-widget-nav{
+  text-align: start;
+}
+
 
 /* Mobile Phones and tablets */
 @media (min-width: 320px) and (max-width: 1200px) {
