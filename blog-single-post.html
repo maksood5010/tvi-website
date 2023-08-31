@@ -14,6 +14,16 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
   <link rel="stylesheet" href="assets/css/libraries.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+  function loadhead(){
+
+    var act = "3";
+    // Store the value in localStorage
+    localStorage.setItem('act', act);
+  }
+  window.onload=loadhead();
+
+  </script>
 </head>
 
 <body>
@@ -22,202 +32,206 @@
       <div class="loading"><span></span><span></span><span></span><span></span></div>
     </div><!-- /.preloader -->
 
+    </div><!-- /.preloader -->
+      
+    
     <!-- =========================
-        Header
-    =========================== -->
-    <header class="header header-layout1">
-      <div class="header-topbar">
-        <div class="container-fluid">
-          <div class="row align-items-center">
-            <div class="col-12">
-              <div class="d-flex align-items-center justify-content-between">
-                <ul class="contact__list d-flex flex-wrap align-items-center list-unstyled mb-0">
-                  <li>
-                    <button class="miniPopup-emergency-trigger" type="button">24/7 Emergency</button>
-                    <div id="miniPopup-emergency" class="miniPopup miniPopup-emergency text-center">
-                      <div class="emergency__icon">
-                        <i class="icon-call3"></i>
-                      </div>
-                      <a href="tel:+97137857988" class="phone__number">
-                        <i class="icon-phone"></i> <span>0097137011888</span>
-                      </a>
-                      <p>Please feel free to contact our friendly reception staff with any general or medical enquiry.
-                      </p>
-                      <a href="contact-us.html" class="btn btn__secondary btn__link btn__block">
-                        <span>Contatct us</span> <i class="icon-arrow-right"></i>
-                      </a>
-                    </div><!-- /.miniPopup-emergency -->
-                  </li>
-                  <li>
-                    <i class="icon-phone"></i><a href="tel:0097137011888">Emergency Line: 0097137011888</a>
-                  </li>
-                  <li>
-                    <i class="icon-location"></i><a href="#">Location: Al ain, Abudhabi, UAE</a>
-                  </li>
-                  <li>
-                    <i class="icon-clock"></i><a href="contact-us.html">Mon - Fri: 8:00 am - 7:00 pm</a>
-                  </li>
-                </ul><!-- /.contact__list -->
-                <div class="d-flex">
-                  <ul class="social-icons list-unstyled mb-0 mr-30">
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                  </ul><!-- /.social-icons -->
-                  <form class="header-topbar__search">
-                    <input type="text" class="form-control" placeholder="Search...">
-                    <button class="header-topbar__search-btn"><i class="fa fa-search"></i></button>
-                  </form>
-                </div>
-              </div>
-            </div><!-- /.col-12 -->
-          </div><!-- /.row -->
-        </div><!-- /.container -->
-      </div><!-- /.header-top -->
-      <nav class="navbar navbar-expand-lg sticky-navbar">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <img src="assets/images/logo/logo-light.png" class="logo-light" alt="logo">
-            <img src="assets/images/logo/logo-dark.png" class="logo-dark" alt="logo">
-          </a>
-          <button class="navbar-toggler" type="button">
-            <span class="menu-lines"><span></span></span>
-          </button>
-          <div class="collapse navbar-collapse" id="mainNavigation">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav__item has-dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Home</a>
-                <ul class="dropdown-menu">
-                  <li class="nav__item">
-                    <a href="index.html" class="nav__item-link">Home Main</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="home-modern.html" class="nav__item-link">Home Modern</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="home-classic.html" class="nav__item-link">Home Classic</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="home-dentist.html" class="nav__item-link">Home Dentist</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="home-pharmacy.html" class="nav__item-link">Home pharmacy</a>
-                  </li><!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
-              </li><!-- /.nav-item -->
-              <li class="nav__item has-dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">About Us</a>
-                <ul class="dropdown-menu">
-                  <li class="nav__item">
-                    <a href="about-us.html" class="nav__item-link">About Us</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="services.html" class="nav__item-link">Our Services</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="services-single.html" class="nav__item-link">single Services</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="pricing.html" class="nav__item-link">Pricing & Plans</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="contact-us.html" class="nav__item-link">Appointments</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="faqs.html" class="nav__item-link">Help & FAQs</a>
-                  </li> <!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="gallery.html" class="nav__item-link">Our Gallery</a>
-                  </li><!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
-              </li><!-- /.nav-item -->
-              <li class="nav__item has-dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Doctors</a>
-                <ul class="dropdown-menu">
-                  <li class="nav__item">
-                    <a href="doctors-timetable.html" class="nav__item-link">Doctors Timetable</a>
-                  </li> <!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="doctors-standard.html" class="nav__item-link">Our Doctors Standard</a>
-                  </li> <!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="doctors-modern.html" class="nav__item-link">Our Doctors Modern</a>
-                  </li> <!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="doctors-grid.html" class="nav__item-link">Our Doctors Grid</a>
-                  </li> <!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="doctors-single-doctor1.html" class="nav__item-link">Single Doctor 01</a>
-                  </li> <!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="doctors-single-doctor2.html" class="nav__item-link">Single Doctor 02</a>
-                  </li> <!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
-              </li><!-- /.nav-item -->
-              <li class="nav__item has-dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link active">Blog</a>
-                <ul class="dropdown-menu">
-                  <li class="nav__item">
-                    <a href="blog.html" class="nav__item-link">Blog Grid</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="blog-single-post.html" class="nav__item-link">Single Blog Post</a>
-                  </li><!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
-              </li><!-- /.nav-item -->
-              <li class="nav__item has-dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Shop</a>
-                <ul class="dropdown-menu">
-                  <li class="nav__item">
-                    <a href="shop.html" class="nav__item-link">Our Products</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="shop-single-product.html" class="nav__item-link">Products Single</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="cart.html" class="nav__item-link">Cart</a>
-                  </li><!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
-              </li><!-- /.nav-item -->
-              <li class="nav__item">
-                <a href="contact-us.html" class="nav__item-link">Contacts</a>
-              </li><!-- /.nav-item -->
-            </ul><!-- /.navbar-nav -->
-            <button class="close-mobile-menu d-block d-lg-none"><i class="fas fa-times"></i></button>
-          </div><!-- /.navbar-collapse -->
-          <div class="d-none d-xl-flex align-items-center position-relative ml-30">
-            <div class="miniPopup-departments-trigger">
-              <span class="menu-lines" id="miniPopup-departments-trigger-icon"><span></span></span>
-              <a href="departments.html">Departments</a>
+    Header
+=========================== -->
+<header class="header header-layout1">
+  <div class="header-topbar">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-12">
+          <div class="d-flex align-items-center justify-content-between">
+            <ul class="contact__list d-flex flex-wrap align-items-center list-unstyled mb-0">
+              <li>
+                <button class="miniPopup-emergency-trigger" type="button">24/7 Emergency</button>
+                <div id="miniPopup-emergency" class="miniPopup miniPopup-emergency text-center">
+                  <div class="emergency__icon">
+                    <i class="icon-call3"></i>
+                  </div>
+                  <a href="tel:+97137857988" class="phone__number">
+                    <i class="icon-phone"></i> <span>0097137011888</span>
+                  </a>
+                  <p>Please feel free to contact our friendly reception staff with any general or medical enquiry.
+                  </p>
+                  <a href="contact-us.html" class="btn btn__secondary btn__link btn__block">
+                    <span>Contatct us</span> <i class="icon-arrow-right"></i>
+                  </a>
+                </div><!-- /.miniPopup-emergency -->
+              </li>
+              <li>
+                <i class="icon-phone"></i><a href="tel:0097137011888">Emergency Line: 0097137011888</a>
+              </li>
+              <li>
+                <i class="icon-location"></i><a href="#">Location: Al ain, Abudhabi, UAE</a>
+              </li>
+              <li>
+                <i class="icon-clock"></i><a href="contact-us.html">Mon - Fri: 8:00 am - 7:00 pm</a>
+              </li>
+            </ul><!-- /.contact__list -->
+            <div class="d-flex">
+              <ul class="social-icons list-unstyled mb-0 mr-30">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              </ul><!-- /.social-icons -->
+              <form class="header-topbar__search">
+                <input type="text" class="form-control" placeholder="Search...">
+                <button class="header-topbar__search-btn"><i class="fa fa-search"></i></button>
+              </form>
             </div>
-            <ul id="miniPopup-departments" class="miniPopup miniPopup-departments dropdown-menu">
-              <li class="nav__item">
-                <a href="department-single.html" class="nav__item-link">Neurology Clinic</a>
-              </li><!-- /.nav-item -->
-              <li class="nav__item">
-                <a href="department-single.html" class="nav__item-link">Cardiology Clinic</a>
-              </li><!-- /.nav-item -->
-              <li class="nav__item">
-                <a href="department-single.html" class="nav__item-link">Pathology Clinic</a>
-              </li><!-- /.nav-item -->
-              <li class="nav__item">
-                <a href="department-single.html" class="nav__item-link">Laboratory Clinic</a>
-              </li><!-- /.nav-item -->
-              <li class="nav__item">
-                <a href="department-single.html" class="nav__item-link">Pediatric Clinic</a>
-              </li><!-- /.nav-item -->
-              <li class="nav__item">
-                <a href="department-single.html" class="nav__item-link">Cardiac Clinic</a>
-              </li><!-- /.nav-item -->
-            </ul> <!-- /.miniPopup-departments -->
-            <a href="contact-us.html" class="btn btn__primary btn__rounded ml-30">
-              <i class="icon-calendar"></i>
-              <span>Appointment</span>
-            </a>
           </div>
-        </div><!-- /.container -->
-      </nav><!-- /.navabr -->
-    </header><!-- /.Header -->
+        </div><!-- /.col-12 -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div><!-- /.header-top -->
+  <nav class="navbar navbar-expand-lg sticky-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo/logo-light.png" class="logo-light" alt="logo">
+        <img src="assets/images/logo/logo-dark.png" class="logo-dark" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button">
+        <span class="menu-lines"><span></span></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavigation">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav__item has-dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Home</a>
+            <ul class="dropdown-menu">
+              <li class="nav__item">
+                <a href="index.html" class="nav__item-link">Home Main</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="home-modern.html" class="nav__item-link">Home Modern</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="home-classic.html" class="nav__item-link">Home Classic</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="home-dentist.html" class="nav__item-link">Home Dentist</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="home-pharmacy.html" class="nav__item-link">Home pharmacy</a>
+              </li><!-- /.nav-item -->
+            </ul><!-- /.dropdown-menu -->
+          </li><!-- /.nav-item -->
+          <li class="nav__item has-dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">About Us</a>
+            <ul class="dropdown-menu">
+              <li class="nav__item">
+                <a href="about-us.html" class="nav__item-link">About Us</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="services.html" class="nav__item-link">Our Services</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="services-single.html" class="nav__item-link">single Services</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="pricing.html" class="nav__item-link">Pricing & Plans</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="contact-us.html" class="nav__item-link">Appointments</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="faqs.html" class="nav__item-link">Help & FAQs</a>
+              </li> <!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="gallery.html" class="nav__item-link">Our Gallery</a>
+              </li><!-- /.nav-item -->
+            </ul><!-- /.dropdown-menu -->
+          </li><!-- /.nav-item -->
+          <li class="nav__item has-dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Doctors</a>
+            <ul class="dropdown-menu">
+              <li class="nav__item">
+                <a href="doctors-timetable.html" class="nav__item-link">Doctors Timetable</a>
+              </li> <!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="doctors-standard.html" class="nav__item-link">Our Doctors Standard</a>
+              </li> <!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="doctors-modern.html" class="nav__item-link">Our Doctors Modern</a>
+              </li> <!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="doctors-grid.html" class="nav__item-link">Our Doctors Grid</a>
+              </li> <!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="doctors-single-doctor1.html" class="nav__item-link">Single Doctor 01</a>
+              </li> <!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="doctors-single-doctor2.html" class="nav__item-link">Single Doctor 02</a>
+              </li> <!-- /.nav-item -->
+            </ul><!-- /.dropdown-menu -->
+          </li><!-- /.nav-item -->
+          <li class="nav__item has-dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link active">Blog</a>
+            <ul class="dropdown-menu">
+              <li class="nav__item">
+                <a href="blog.html" class="nav__item-link">Blog Grid</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="blog-single-post.html" class="nav__item-link">Single Blog Post</a>
+              </li><!-- /.nav-item -->
+            </ul><!-- /.dropdown-menu -->
+          </li><!-- /.nav-item -->
+          <li class="nav__item has-dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Shop</a>
+            <ul class="dropdown-menu">
+              <li class="nav__item">
+                <a href="shop.html" class="nav__item-link">Our Products</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="shop-single-product.html" class="nav__item-link">Products Single</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="cart.html" class="nav__item-link">Cart</a>
+              </li><!-- /.nav-item -->
+            </ul><!-- /.dropdown-menu -->
+          </li><!-- /.nav-item -->
+          <li class="nav__item">
+            <a href="contact-us.html" class="nav__item-link">Contacts</a>
+          </li><!-- /.nav-item -->
+        </ul><!-- /.navbar-nav -->
+        <button class="close-mobile-menu d-block d-lg-none"><i class="fas fa-times"></i></button>
+      </div><!-- /.navbar-collapse -->
+      <div class="d-none d-xl-flex align-items-center position-relative ml-30">
+        <div class="miniPopup-departments-trigger">
+          <span class="menu-lines" id="miniPopup-departments-trigger-icon"><span></span></span>
+          <a href="departments.html">Departments</a>
+        </div>
+        <ul id="miniPopup-departments" class="miniPopup miniPopup-departments dropdown-menu">
+          <li class="nav__item">
+            <a href="department-single.html" class="nav__item-link">Neurology Clinic</a>
+          </li><!-- /.nav-item -->
+          <li class="nav__item">
+            <a href="department-single.html" class="nav__item-link">Cardiology Clinic</a>
+          </li><!-- /.nav-item -->
+          <li class="nav__item">
+            <a href="department-single.html" class="nav__item-link">Pathology Clinic</a>
+          </li><!-- /.nav-item -->
+          <li class="nav__item">
+            <a href="department-single.html" class="nav__item-link">Laboratory Clinic</a>
+          </li><!-- /.nav-item -->
+          <li class="nav__item">
+            <a href="department-single.html" class="nav__item-link">Pediatric Clinic</a>
+          </li><!-- /.nav-item -->
+          <li class="nav__item">
+            <a href="department-single.html" class="nav__item-link">Cardiac Clinic</a>
+          </li><!-- /.nav-item -->
+        </ul> <!-- /.miniPopup-departments -->
+        <a href="contact-us.html" class="btn btn__primary btn__rounded ml-30">
+          <i class="icon-calendar"></i>
+          <span>Appointment</span>
+        </a>
+      </div>
+    </div><!-- /.container -->
+  </nav><!-- /.navabr -->
+</header><!-- /.Header -->
+
 
     <!-- ========================
        page title 
@@ -228,10 +242,11 @@
           <div class="col-12">
             <nav>
               <ol class="breadcrumb mb-0">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item"><a href="blog.html">Blog</a></li>
-                <li class="breadcrumb-item active" aria-current="page">6 Tips to Protect Your Mental Health When You’re
-                  Sick</li>
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item"><a href="/news">Blog</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  AACSH Embarks on a Humanitarian Mission
+                </li>
               </ol>
             </nav>
           </div><!-- /.col-12 -->
@@ -254,38 +269,30 @@
               </div><!-- /.post-img -->
               <div class="post__body pb-0">
                 <div class="post__meta-cat">
-                  <a href="#">Consulting</a><a href="#">Sales</a>
+                  <a href="#">Skin care</a><a href="#">Dermatology</a>
                 </div><!-- /.blog-meta-cat -->
                 <div class="post__meta d-flex align-items-center mb-20">
-                  <span class="post__meta-date">Jan 20, 2022</span>
-                  <a class="post__meta-author" href="#">Martin King</a>
-                  <a class="post__meta-comments" href="#">2 coments</a>
+                  <span class="post__meta-date">Aug 30, 2023</span>
+                  <a class="post__meta-author" href="#">AACSH</a>
+                  <a class="post__meta-comments" href="#"></a>
                 </div><!-- /.blog-meta -->
                 <h1 class="post__title mb-30">
-                  6 Tips to Protect Your Mental Health When You’re Sick
+                  AACSH Embarks on a Humanitarian Mission: Baby Rayan Travels from Iraq for Life-changing Surgery
                 </h1>
                 <div class="post__desc">
-                  <p>Vast numbers of employees now work remotely, and it’s too late to develop a set of remote-work
-                    policies if you didn’t already have one. But there are ways to make the remote-work experience
-                    productive and engaging — for employees and the organization.</p>
-                  <p> “At most organizations, scenario planning focuses on the necessary operational responses to ensure
-                    business continuity. Few of these plans address the ability or bandwidth of employees to focus on
-                    their work,” says Brian Kropp, Distinguished Vice President, Research, Gartner.</p>
-                  <p>Use both direct conversations and indirect observations to get visibility into employees’
-                    challenges
-                    and concerns. Use every opportunity to make clear to employees that you support and care for them.
-                    To
-                    facilitate regular conversations between managers and employees, provide managers with guidance on
-                    how
-                    best to broach sensitive subjects arising from the COVID-19 pandemic, including alternative work
-                    models, job security and prospects, impact on staffing and tension in the workplace.</p>
-                  <p>Make sure employees have the technology they need to be successful, which may be more than just a
-                    mobile phone and laptop. For example, if you expect employees to attend virtual meetings, do they
-                    have
-                    adequate cameras?</p>
-                  <p>Even if you don’t have an extensive set of technology and collaborative tools available, you can
-                    equip employees to function effectively when remote. But don’t just assume that people know how to
-                    operate with virtual communications — or are comfortable in that environment. </p>
+                  <p>
+                    In a heartwarming testament to our commitment, we are thrilled to introduce baby Rayan, a courageous young soul who has journeyed all the way from Iraq in search of a life-changing medical intervention. Baby Rayan is facing the formidable challenge of a congenital giant nevus, a condition that demands expert care and compassion.
+                  </p>
+                  <p>
+                    At AACSH, we believe in making the impossible possible, and this conviction is embodied by Dr. Mohan Rangaswamy, an esteemed plastic and reconstructive surgeon within our ranks. Dr. Rangaswamy, renowned for his expertise and compassionate approach to healthcare, has taken the reins of baby Rayan's case.  
+                  </p>
+                  <p>
+                    Congenital giant nevus, characterized by an abnormally large and pigmented birthmark on the skin, presents both physical and emotional hurdles. Dr. Rangaswamy and his dedicated medical team have diligently assessed baby Rayan's condition, developing a tailored treatment plan that holds the promise of transforming his life.  
+                  </p>
+                  <h6>About the American Academy of Cosmetic Surgery Hospital (AACSH)</h6>
+                  <p>
+AACSH is a world-renowned healthcare institution dedicated to providing the highest standard of reconstructive medical services. With a team of exceptionally skilled surgeons and a commitment to making a difference, AACSH has earned a reputation for transforming lives through compassionate and innovative healthcare solutions.
+                  </p>
                 </div><!-- /.blog-desc -->
               </div>
             </div><!-- /.post-item -->
@@ -300,9 +307,9 @@
               </div><!-- /.blog-share -->
               <div class="widget-tags">
                 <ul class="list-unstyled d-flex flex-wrap mb-0">
-                  <li><a href="#">Consulting</a></li>
-                  <li><a href="#">Tech</a></li>
-                  <li><a href="#">Employee</a></li>
+                  <li><a href="#">Skincare</a></li>
+                  <li><a href="#">Dermatology</a></li>
+                  <li><a href="#">congenital giant nevus</a></li>
                 </ul>
               </div><!-- /.blog-tags -->
             </div>
@@ -330,7 +337,7 @@
               <div class="blog-author__avatar">
                 <img src="assets/images/blog/author/1.jpg" alt="avatar">
               </div><!-- /.author-avatar  -->
-              <div class="blog-author__content">
+              <div class="blog-author__content" style="display: none;">
                 <h6 class="blog-author__name">Mahmoud Baghagho</h6>
                 <p class="blog-author__bio">Founded by Begha over many cups of tea at her kitchen table in 2009, our
                   brand promise is simple: to
@@ -343,7 +350,7 @@
                 </ul>
               </div><!-- /.author-content  -->
             </div><!-- /.blog-author  -->
-            <div class="blog-comments mb-70">
+            <div class="blog-comments mb-70" style="display: none;">
               <h5 class="blog-widget__title">2 comments</h5>
               <ul class="comments-list list-unstyled">
                 <li class="comment__item">
@@ -378,7 +385,7 @@
                 </li><!-- /.comment -->
               </ul><!-- /.comments-list -->
             </div><!-- /.blog-comments -->
-            <div class="blog-widget blog-comments-form mb-30">
+            <div class="blog-widget blog-comments-form mb-30" style="display: none;">
               <h5 class="blog-widget__title">Leave A Reply</h5>
               <form>
                 <div class="row">
@@ -477,11 +484,11 @@
                 <h5 class="widget__title">Tags</h5>
                 <div class="widget-content">
                   <ul class="list-unstyled mb-0">
-                    <li><a href="#">Insights</a></li>
-                    <li><a href="#">Industry</a></li>
-                    <li><a href="#">Modern</a></li>
-                    <li><a href="#">Corporate</a></li>
-                    <li><a href="#">Business</a></li>
+                    <li><a href="#">AACSH</a></li>
+                    <li><a href="#">Dubai</a></li>
+                    <li><a href="#">congenital giant nevus</a></li>
+                    <li><a href="#">Rare</a></li>
+                    <li><a href="#">Surgery</a></li>
                   </ul>
                 </div><!-- /.widget-content -->
               </div><!-- /.widget-tags -->
@@ -505,7 +512,7 @@
                   compassionate manner. We hope you will allow us to care for you and strive to be the first and best
                   choice for your family healthcare.
                 </p>
-                <a href="contact-us.html" class="btn btn__primary btn__primary-style2 btn__link">
+                <a href="/contact" class="btn btn__primary btn__primary-style2 btn__link">
                   <span>Contatct us</span> <i class="icon-arrow-right"></i>
                 </a>
               </div><!-- /.footer-widget__content -->
@@ -552,7 +559,7 @@
                   <li class="color-body">  Al Ain, UAE, P.O Box 88370.</li>
                 </ul>
                 <div class="d-flex align-items-center">
-                  <a href="contact-us.html" class="btn btn__primary btn__link mr-30">
+                  <a href="/contact" class="btn btn__primary btn__link mr-30">
                     <i class="icon-arrow-right"></i> <span>Get Directions</span>
                   </a>
                   <ul class="social-icons list-unstyled mb-0">
